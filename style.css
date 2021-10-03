@@ -1,22 +1,42 @@
-body {
-    display: grid;
-    grid-template-areas:
-       "header"
-       "main"
-       "footer"
-    }
-    grid-template-rows: auto 1fr auto;
-    grid-template-columns: 100%;
-}
-
-body .header {
+body { 
+  display: grid;
+  grid-template-areas: 
+    "header header header"
+    "left article right"
+    "footer footer footer";
+  grid-template-rows: 80px 1fr 70px;  
+  grid-template-columns: 20% 1fr 20%;
+  height: 100vh;
+  }  
+header, footer, article, nav, div {
+  background: lightGrey;
+  border: solid;
+  }
+#pageHeader {
   grid-area: header;
-}
-
-body .main {
-  grid-area: main;
-}
-
-body .footer {
+  }
+#pageFooter {
   grid-area: footer;
+  }
+#mainArticle { 
+  grid-area: article;      
+  }
+#left { 
+  grid-area: left; 
+  }
+#right { 
+  grid-area: right; 
+  } 
+/* Stack the layout on small devices/viewports. */
+@media all and (max-width: 575px) {
+  body { 
+    grid-template-areas: 
+      "header"
+      "article"
+      "left"
+      "right"
+      "footer";
+    grid-template-rows: 80px 1fr 70px 1fr 70px;  
+    grid-template-columns: 1fr;
+ }
 }
