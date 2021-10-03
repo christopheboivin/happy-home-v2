@@ -1,12 +1,15 @@
+html {
+  height: 100%;
+}
 body { 
   display: grid;
   grid-template-areas: 
     "header header header"
     "left article right"
     "footer footer footer";
-  grid-template-rows: 80px 1fr 70px;  
+  grid-template-rows: 25% 1fr 10%;  
   grid-template-columns: 20% 1fr 20%;
-  height: 100vh;
+  height: 100%;
   }  
 header, footer, article, nav, div {
   background: lightGrey;
