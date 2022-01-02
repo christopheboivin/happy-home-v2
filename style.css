@@ -55,7 +55,7 @@ header, footer, article, nav, div, menu {
 }
 
 /* Stack the layout on small devices/viewports. */
-@media all and (max-device-width: 640px) {
+@media only screen and (hover: none) and (pointer: coarse){
   body {
     grid-template-areas:
       "header"
@@ -64,7 +64,7 @@ header, footer, article, nav, div, menu {
       "left"
       "right"
       "footer";
-    grid-template-rows: 80px 40px 1fr 70px 70px 20px;
+    grid-template-rows: 25%  5% 1fr 10% 10% 5%;
     grid-template-columns: 1fr;
   }
 }
