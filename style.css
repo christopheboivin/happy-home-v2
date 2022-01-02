@@ -2,6 +2,7 @@ html {
   height: 100%;
 }
 
+
 body {
   display: grid;
   grid-template-areas:
@@ -10,32 +11,42 @@ body {
     "left article right"
     "footer footer footer";
   grid-template-rows: 25% 5% 1fr 10%;
-  grid-template-columns: 20% 1fr 20%;
+  grid-template-columns: 10% 1fr 10%;
   height: 100%;
 }
 
-header, footer, article, nav, div, menu {
-  /* background: lightGrey; */
-  border: solid;
+a {
+  color: #337ab7;
+  text-decoration: none;
 }
 
 #pageHeader {
   grid-area: header;
   background-image: url("images/header.jpg");
   background-size: 100% 100%;
+  /* background-clip: content-box; */
 }
 
 #menu {
   grid-area: menu;
+  background-color: black;
+  height: 45px;
+  display: block;
+  list-style: none;
+  color: white;
 }
 
-.menu-item {
-  padding: 8px 16px;
-  float: left;
-  width: auto;
-  border: none;
-  display: block;
-  outline: 0;
+#menu li {
+  display: inline;
+  padding: 12px 20px 12px 20px;
+  color: white;
+}
+#menu a {
+  color:white;
+}
+
+#menu .selected {
+  background-color: #289dcc;
 }
 
 #pageFooter {
@@ -44,6 +55,7 @@ header, footer, article, nav, div, menu {
 
 #mainArticle {
   grid-area: article;
+  text-align: justify;
 }
 
 #left {
@@ -55,7 +67,7 @@ header, footer, article, nav, div, menu {
 }
 
 /* Stack the layout on small devices/viewports. */
-@media only screen and (hover: none) and (pointer: coarse){
+@media all and (max-device-width: 640px) {
   body {
     grid-template-areas:
       "header"
@@ -64,7 +76,22 @@ header, footer, article, nav, div, menu {
       "left"
       "right"
       "footer";
-    grid-template-rows: 25%  5% 1fr 10% 10% 5%;
+    grid-template-rows: 25% 5% 1fr 10% 10% 5%;
+    grid-template-columns: 1fr;
+  }
+}
+
+/* mobile devices */
+@media only screen and (hover: none) and (pointer: coarse) {
+  body {
+    grid-template-areas:
+      "header"
+      "menu"
+      "article"
+      "left"
+      "right"
+      "footer";
+    grid-template-rows: 25% 5% 1fr 10% 10% 5%;
     grid-template-columns: 1fr;
   }
 }
