@@ -1,49 +1,72 @@
 html {
   height: 100%;
 }
+
 body {
   display: grid;
-  grid-template-areas: 
+  grid-template-areas:
     "header header header"
     "left article right"
     "footer footer footer";
-  grid-template-rows: 25% 1fr 10%;  
+  grid-template-rows: 25% 1fr 10%;
   grid-template-columns: 20% 1fr 20%;
   height: 100%;
-  }  
-header, footer, article, nav, div {
-  background: lightGrey;
-  border: solid;
-  }
-#main-nav {
-   background-color: red;:
+}
 
-  }
+header, footer, article, nav, div {
+  /* background: lightGrey; */
+  border: solid;
+  position: relative;
+}
+
+#menu {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width:100%;
+}
+
+.menu-item {
+  padding: 8px 16px;
+  float: left;
+  width: auto;
+  border: none;
+  display: block;
+  outline: 0;
+}
+
 #pageHeader {
   grid-area: header;
-  }
+  background-image: url("images/header.jpg");
+  background-size: contain;
+}
+
 #pageFooter {
   grid-area: footer;
-  }
-#mainArticle { 
-  grid-area: article;      
-  }
-#left { 
-  grid-area: left; 
-  }
-#right { 
-  grid-area: right; 
-  } 
+}
+
+#mainArticle {
+  grid-area: article;
+}
+
+#left {
+  grid-area: left;
+}
+
+#right {
+  grid-area: right;
+}
+
 /* Stack the layout on small devices/viewports. */
 @media all and (max-width: 575px) {
-  body { 
-    grid-template-areas: 
+  body {
+    grid-template-areas:
       "header"
       "article"
       "left"
       "right"
       "footer";
-    grid-template-rows: 80px 1fr 70px 1fr 70px;  
+    grid-template-rows: 80px 1fr 70px 1fr 70px;
     grid-template-columns: 1fr;
- }
+  }
 }
