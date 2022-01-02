@@ -6,24 +6,27 @@ body {
   display: grid;
   grid-template-areas:
     "header header header"
+    "menu menu menu"
     "left article right"
     "footer footer footer";
-  grid-template-rows: 25% 1fr 10%;
+  grid-template-rows: 25% 5% 1fr 10%;
   grid-template-columns: 20% 1fr 20%;
   height: 100%;
 }
 
-header, footer, article, nav, div {
+header, footer, article, nav, div, menu {
   /* background: lightGrey; */
   border: solid;
-  position: relative;
+}
+
+#pageHeader {
+  grid-area: header;
+  background-image: url("images/header.jpg");
+  background-size: 100% 100%;
 }
 
 #menu {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width:100%;
+  grid-area: menu;
 }
 
 .menu-item {
@@ -33,12 +36,6 @@ header, footer, article, nav, div {
   border: none;
   display: block;
   outline: 0;
-}
-
-#pageHeader {
-  grid-area: header;
-  background-image: url("images/header.jpg");
-  background-size: contain;
 }
 
 #pageFooter {
@@ -62,11 +59,12 @@ header, footer, article, nav, div {
   body {
     grid-template-areas:
       "header"
+      "menu"
       "article"
       "left"
       "right"
       "footer";
-    grid-template-rows: 80px 1fr 70px 1fr 70px;
+    grid-template-rows: 80px 40px 1fr 70px 70px 20px;
     grid-template-columns: 1fr;
   }
 }
