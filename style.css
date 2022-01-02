@@ -55,7 +55,7 @@ header, footer, article, nav, div, menu {
 }
 
 /* Stack the layout on small devices/viewports. */
-@media all and (max-width: 575px) {
+@media all and (max-width: 480px) {
   body {
     grid-template-areas:
       "header"
