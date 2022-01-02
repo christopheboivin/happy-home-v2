@@ -1,7 +1,7 @@
 html {
   height: 100%;
 }
-body { 
+body {
   display: grid;
   grid-template-areas: 
     "header header header"
@@ -14,6 +14,10 @@ body {
 header, footer, article, nav, div {
   background: lightGrey;
   border: solid;
+  }
+#main-nav {
+   background-color: red;:
+
   }
 #pageHeader {
   grid-area: header;
