@@ -1,18 +1,11 @@
-html {
-  height: 100%;
-}
-
-
 body {
   display: grid;
   grid-template-areas:
-    "header header header"
-    "menu menu menu"
-    "left article right"
-    "footer footer footer";
-  grid-template-rows: 25% 5% 1fr 10%;
-  grid-template-columns: 10% 1fr 10%;
-  height: 100%;
+    "header"
+    "menu"
+    "article"
+    "footer";
+  grid-template-rows: 20% 10% 1fr 5%;
 }
 
 a {
@@ -30,18 +23,14 @@ a {
 #menu {
   grid-area: menu;
   background-color: black;
-  height: 45px;
-  display: block;
-  list-style: none;
-  color: white;
+  display: flex;
 }
 
-#menu li {
-  display: inline;
-  padding: 1% 1% 1% 1%;
-  color: white;
-
+#menu ul {
+  justify-content: space-evenly;
+  align-items: center;
 }
+
 
 #menu a {
   color:white;
@@ -71,33 +60,33 @@ a {
   grid-area: right;
 }
 
-/* Stack the layout on small devices/viewports. */
-@media all and (max-device-width: 640px) {
+@media (min-width: 500px) {
   body {
-    grid-template-areas:
-      "header"
-      "menu"
-      "article"
-      "left"
-      "right"
-      "footer";
-    grid-template-rows: 25% 5% 1fr 10% 10% 5%;
-    grid-template-columns: 1fr;
+    grid-template-rows: 20% 10% 1fr 5%;
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas: 
+    "header header"
+    "menu menu"
+    "left article"
+    "right footer";
+  }
+  #menu ul {
+    display: flex;
+    justify-content: space-around;
   }
 }
 
-/* mobile devices */
-@media only screen and (hover: none) and (pointer: coarse) {
+@media (min-width: 700px) {
   body {
-    grid-template-areas:
-      "header"
-      "menu"
-      "article"
-      "left"
-      "right"
-      "footer";
-    grid-template-rows: 25% 5% 1fr 10% 10% 5%;
-    grid-template-columns: 1fr;
-    padding: 4% 4% 4% 4%;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-areas: 
+    "header header header"
+    "menu menu menu "
+    "left article right"
+    "footer footer footer";
+  }
+  #menu ul {
+    display: flex;
+    justify-content: space-evenly;
   }
 }
