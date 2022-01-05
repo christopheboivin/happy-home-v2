@@ -19,12 +19,17 @@
     </picture>
   </header>
   <nav id="menu">
-    <ul>
-      <li><a href="index.html">Accueil</a></li>
-      <li><a href="qui-suis-je.html">Qui-suis-je</a></li>
-      <li class="selected"><a href="formules-et-tarifs.html">Formules et Tarifs</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
+    <label for="hamburger">&#9776;</label>
+    <input type="checkbox" id="hamburger" />
+    <span id="hamburger_selected"><a href="formules-et-tarifs.html">Formules et Tarifs</a></span>
+    <div id="menu_items">
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="qui-suis-je.html">Qui-suis-je</a></li>
+        <li class="selected"><a href="formules-et-tarifs.html">Formules et Tarifs</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
   </nav>
   <article id="mainArticle">
     <div class="formules">

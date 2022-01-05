@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/menu.css">
   <title>HAppy Home - Accueil</title>
 </head>
 
@@ -18,12 +19,17 @@
     </picture>
   </header>
   <nav id="menu">
-    <ul>
-      <li class="selected"><a href="index.html">Accueil</a></li>
-      <li><a href="qui-suis-je.html">Qui suis-je</a></li>
-      <li><a href="formules-et-tarifs.html">Formules et Tarifs</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
+    <label for="hamburger">&#9776;</label>
+    <input type="checkbox" id="hamburger" />
+    <span id="hamburger_selected"><a href="index.html">Accueil</a></span>
+    <div id="menu_items">
+      <ul>
+        <li class="selected"><a href="index.html">Accueil</a></li>
+        <li><a href="qui-suis-je.html">Qui suis-je</a></li>
+        <li><a href="formules-et-tarifs.html">Formules et Tarifs</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
   </nav>
   <article id="mainArticle">
     <h1>Vous souhaitez prendre des cours d’éducation canine, de dressage canin ou modifier les comportements
