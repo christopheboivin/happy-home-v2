@@ -49,6 +49,8 @@ a {
 #mainArticle {
   grid-area: article;
   text-align: justify;
+  padding-left: 1em;
+  padding-right: 1em;
 }
 
 #left {
