@@ -27,15 +27,20 @@ a {
 
 #menu {
   grid-area: menu;
-  background-color: black;
+  background-color: #333;
 }
 
 #menu ul {
   list-style: none;
+  width: 80%;
 }
 
 #menu a {
-  color: white;
+  display: inline-flex;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
 #menu .selected {
@@ -91,6 +96,11 @@ a {
       "menu menu menu"
       "left article right"
       "footer footer footer";
+  }
+
+  #menu ul {
+    display: flex;
+    justify-content: space-evenly;
   }
 
   #pageHeader img {
