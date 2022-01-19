@@ -27,7 +27,6 @@ a {
 
 #pageHeader img {
   width: 100%;
-  /* height: 71px; */
   display: block;
 }
 
@@ -43,7 +42,6 @@ a {
 
 #menu ul {
   list-style: none;
-  width: 80%;
 }
 
 #menu a {
