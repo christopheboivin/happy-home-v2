@@ -1,0 +1,13 @@
+dans le logo:
+- Educateur canin certifié 
+en dessous du menu
+- bandeau "contact" : Elise Sola, téléphone, horaires, secteur, 
+
+
+Design genéral du site:
+sur mobile 1 colonne
+
+sur PC 2 colonnes
+
+
+Sur PC: header PNG, logo + slogan sans texte, ajouter en texte les informations
