@@ -111,6 +111,10 @@ a {
   height: 150px;
 }
 
+#mainArticle div {
+  padding: 1em;
+}
+
 @media (min-width: 500px) {
   body {
     grid-template-columns: 1fr 3fr;
@@ -148,6 +152,10 @@ a {
     display: none;
   }
 
+  #mainArticle div {
+    float: left;
+    width: 45%;
+  }
 }
 
 @media (min-width: 700px) {
