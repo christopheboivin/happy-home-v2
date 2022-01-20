@@ -152,7 +152,7 @@ a {
     display: none;
   }
 
-  #mainArticle div {
+  #mainArticle div:not(.formules):not(.formule):not(.formule-content) {
     float: left;
     width: 45%;
   }
