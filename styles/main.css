@@ -169,9 +169,11 @@ a {
     display: none;
   }
 
-  #mainArticle div:not(.formules):not(.formule):not(.formule-content) {
-    float: left;
-    width: 45%;
+  #mainArticle {
+    column-count: 2;
+  }
+  #mainArticle div {
+    margin-top: 5% !important;
   }
 }
 
