@@ -112,6 +112,10 @@ a {
   position: relative;
 }
 
+#mainArticle .info {
+  font-size: 18px;
+}
+
 #left {
   grid-area: left;
 }
