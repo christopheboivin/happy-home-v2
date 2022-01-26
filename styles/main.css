@@ -54,6 +54,10 @@ a {
   background-color: #289dcc;
 }
 
+#menu .tel {
+  float: right;
+}
+
 #menu label {
   display: inline-block;
   color: white;
@@ -86,6 +90,10 @@ a {
 
 #contact a {
   color: #f2f2f2;
+}
+
+#contact .tel {
+  display: none;
 }
 
 #pageFooter {
@@ -235,6 +243,10 @@ div.tarif {
 
   #mainArticle .adapt-columns {
     column-count: 2;
+  }
+
+  #contact .tel {
+    display: inline;
   }
 
   #encart {
