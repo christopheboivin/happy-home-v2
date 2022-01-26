@@ -26,7 +26,6 @@ a {
 }
 
 #pageHeader img {
-  width: 100%;
   display: block;
 }
 
@@ -82,6 +81,7 @@ a {
   color: #f2f2f2;
   text-align: center;
   font-size: 20px;
+  padding-top: 0.2em;
 }
 
 #contact a {
@@ -97,6 +97,7 @@ a {
   text-align: justify;
   padding-left: 1em;
   padding-right: 1em;
+  position: relative;
 }
 
 #left {
@@ -131,6 +132,16 @@ a {
   background: #ebebeb;
   padding: 0.5em;
   margin: 0.5em;
+}
+
+#mainArticle img {
+  max-width: 327px;
+}
+
+#encart {
+  background-color: #289dcc;
+  color: white;
+  padding: 0.1em 1em 0.1em 1em;
 }
 
 @media (min-width: 500px) {
@@ -172,6 +183,11 @@ a {
 
   #mainArticle .adapt-columns {
     column-count: 2;
+  }
+
+  #encart {
+    float: right;
+    width: 25%;
   }
 }
 
