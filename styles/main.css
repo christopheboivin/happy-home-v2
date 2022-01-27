@@ -117,18 +117,6 @@ a {
   font-size: 15px;
 }
 
-#left {
-  grid-area: left;
-}
-
-#right {
-  grid-area: right;
-}
-
-#googleMap {
-  height: 150px;
-}
-
 #mainArticle .contact {
   background-color: var(--main-color);
   color: white;
@@ -163,6 +151,18 @@ a {
   position: relative;
   display: flow-root;
   padding: 0.5em;
+}
+
+#left {
+  grid-area: left;
+}
+
+#right {
+  grid-area: right;
+}
+
+#googleMap {
+  height: 150px;
 }
 
 #encart {
@@ -253,6 +253,9 @@ div.tarif {
   #mainArticle .adapt-columns {
     column-count: 2;
   }
+  #mainArticle p {
+    line-height: 2.4em;
+  }
 
   #contact .tel {
     display: inline;
@@ -267,12 +270,14 @@ div.tarif {
     float: right;
     margin-top: 0 !important;
     margin-left: 1em !important;
+    margin-right: 5% !important;
   }
 
   img.img-left {
     float: left;
     margin-top: 0 !important;
     margin-right: 1em !important;
+    margin-left: 5% !important;
   }
 
   div.choix {
