@@ -271,6 +271,18 @@ div.tarif {
   #mainArticle img {
     width: 327px;
   }
+  
+  img.structure1 {
+    height: 240px;
+    float:left;
+    margin-left: 20% !important;
+  }
+  img.structure2 {
+    height:240px;
+    float: left;
+    margin-left: 0px !important;
+  }
+
   img.img-right {
     float: right;
     margin-top: 0 !important;
