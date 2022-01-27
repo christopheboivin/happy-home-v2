@@ -8,6 +8,7 @@ html {
 
 body {
   font-family: Arial, Helvetica, sans-serif;
+  height: 100%;
   margin: 0;
   padding: 0;
   display: grid;
@@ -103,18 +104,22 @@ a {
 #pageFooter {
   grid-area: footer;
 }
-
+h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 #mainArticle {
   grid-area: article;
   text-align: justify;
-  padding-top: 1em;
   padding-left: 1em;
   padding-right: 1em;
   position: relative;
 }
 
 #mainArticle .info {
-  font-size: 15px;
+  font-size: 1.2em;
+  line-height: 1em;
+  padding-top: 0;
 }
 
 #mainArticle .contact {
