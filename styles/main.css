@@ -104,10 +104,12 @@ a {
 #pageFooter {
   grid-area: footer;
 }
+
 h2 {
   margin-top: 0;
   margin-bottom: 0;
 }
+
 #mainArticle {
   grid-area: article;
   text-align: justify;
@@ -116,10 +118,12 @@ h2 {
   position: relative;
 }
 
-#mainArticle .info {
-  font-size: 1.2em;
-  line-height: 1em;
-  padding-top: 0;
+#mainArticle ul.info {
+  list-style: none;
+  list-style-position: inside;
+  padding-left: 0;
+  font-size: 19px;
+  font-weight: bold;
 }
 
 #mainArticle .contact {
@@ -255,6 +259,7 @@ div.tarif {
   #mainArticle .adapt-columns {
     column-count: 2;
   }
+
   #mainArticle p {
     line-height: 2.4em;
   }
@@ -271,14 +276,15 @@ div.tarif {
   #mainArticle img {
     width: 327px;
   }
-  
+
   img.structure1 {
     height: 240px;
-    float:left;
+    float: left;
     margin-left: 20% !important;
   }
+
   img.structure2 {
-    height:240px;
+    height: 240px;
     float: left;
     margin-left: 0px !important;
   }
