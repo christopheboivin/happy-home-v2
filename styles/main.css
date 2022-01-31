@@ -23,6 +23,7 @@ body {
 a {
   color: var(--main-color);
   text-decoration: none;
+  font-weight: bold;
 }
 
 #pageHeader {
@@ -123,7 +124,6 @@ h2 {
   list-style-position: inside;
   padding-left: 0;
   font-size: 19px;
-  font-weight: bold;
 }
 
 #mainArticle .contact {
@@ -226,8 +226,6 @@ div.tarif {
     justify-content: space-evenly;
   }
 
-
-
   #pageHeader div {
     display: block;
     float: right;
@@ -240,11 +238,6 @@ div.tarif {
 
   #menu_items {
     display: block;
-  }
-
-  #menu ul {
-    display: flex;
-    justify-content: space-around;
   }
 
   #pageHeader img {
