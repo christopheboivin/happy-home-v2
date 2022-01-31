@@ -296,6 +296,15 @@ div.tarif {
     margin-right: 1em !important;
   }
 
+  img.full-size {
+    width: 100% !important;
+    height: 100% !important;
+    max-height: 100% !important;
+    max-width: 100% !important;
+    object-fit: contain;
+  }
+
+
   div.choix {
     margin-top: 0 !important;
   }
