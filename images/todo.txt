@@ -1,3 +1,1 @@
-sur l'accueil
-- reduire l'espace entre horaires et texte en dessous
-- lien facebook
+svg logo
