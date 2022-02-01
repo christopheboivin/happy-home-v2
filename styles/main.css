@@ -106,11 +106,6 @@ a {
   grid-area: footer;
 }
 
-h2 {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
 #mainArticle {
   grid-area: article;
   text-align: justify;
@@ -120,10 +115,15 @@ h2 {
 }
 
 #mainArticle ul.info {
+  line-height: 2em;
   list-style: none;
   list-style-position: inside;
   padding-left: 0;
   font-size: 19px;
+}
+
+.info a {
+  color: black;
 }
 
 #mainArticle .contact {
