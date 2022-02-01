@@ -210,6 +210,10 @@ div.tarif {
   padding: 5px;
 }
 
+.tarif ul {
+  line-height: 1.8em;
+}
+
 @media (min-width: 700px) {
   body {
     grid-template-columns: 1fr 4fr 1fr;
