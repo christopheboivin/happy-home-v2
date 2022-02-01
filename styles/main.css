@@ -26,6 +26,10 @@ a {
   font-weight: bold;
 }
 
+h3 {
+  margin-bottom: 0;
+}
+
 #pageHeader {
   grid-area: header;
   position: relative;
@@ -213,6 +217,7 @@ div.tarif {
 .tarif ul {
   line-height: 1.8em;
 }
+
 
 @media (min-width: 700px) {
   body {
