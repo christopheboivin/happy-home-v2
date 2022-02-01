@@ -1,4 +1,3 @@
 sur l'accueil
-- centrer le texte sous la photo
 - reduire l'espace entre horaires et texte en dessous
 - lien facebook
